@@ -4,14 +4,14 @@ services:
   worker:
     build:
       context: ./worker
-      dockerfile: worker.dockerfile
+      dockerfile: worker.Dockerfile
     volumes: 
     - "./worker:/app"
     - "./data:/app/data"
   api:
     build:
       context: ./api
-      dockerfile: api.dockerfile
+      dockerfile: api.Dockerfile
     volumes: 
     - "./api:/app"
     - "./data:/app/data"
